@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images using grid</title>
+    <head>
+        <style>
+            .parent
+            {
+                display: grid;
+                grid-template-columns: 200px 200px 200px 200px 200px 200px;
+                grid-template-rows: 300px 300px;
+                gap: 30px;  
+            }
+             .div1,.div2,.div3,.div4
+            {      
+                position: relative;
+            }
+            .name1,.name2,.name3,.name4
+            {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: black;
+                color: white;
+            }
+            body
+            {
+                margin-top: 80px;
+                margin-left: 50px;
+                background-color: teal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            
+                <div class="div1">
+                    <img src="./house2.jpg" width="210" height="310px" >
+                  <div class="name1"> Summer House</div>
+                </div>
+                <div class="div2">
+                    <img src="./house3.jpg" width="210" height="310">
+                  <div class="name2">Renovated</div>
+                </div>
+                <div class="div3">
+                    <img src="./house4.jpg" width="210" height="310">
+                  <div class="name3">Barn House</div>
+                </div>
+                <div class="div4">
+                    <img src="./house5.jpg" width="210" height="310">
+                  <div class="name4">Summar House</div>
+                </div>
+                <div class="div4">
+                    <img src="./house5.jpg" width="210" height="310">
+                  <div class="name4">Summar House</div>
+                </div>
+                <div class="div1">
+                    <img src="./house2.jpg" width="210" height="310px" >
+                  <div class="name1"> Summer House</div>
+                </div>
+                <div class="div2">
+                    <img src="./house3.jpg" width="210" height="310">
+                  <div class="name2">Renovated</div>
+                </div>
+                <div class="div3">
+                    <img src="./house4.jpg" width="210" height="310">
+                  <div class="name3">Barn House</div>
+                </div>
+                <div class="div4">
+                    <img src="./house5.jpg" width="210" height="310">
+                  <div class="name4">Summar House</div>
+                </div>
+                <div class="div1">
+                    <img src="./house2.jpg" width="210" height="310px" >
+                  <div class="name1"> Summer House</div>
+                </div>
+                <div class="div2">
+                    <img src="./house3.jpg" width="210" height="310">
+                  <div class="name2">Renovated</div>
+                </div>
+                <div class="div3">
+                    <img src="./house4.jpg" width="210" height="310">
+                  <div class="name3">Barn House</div>
+                </div>      
+        </div>
+    </body>
+        
+</html>

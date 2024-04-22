@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template using grid and flex</title>
+    <style>
+         #left
+         {
+           
+            float: left;
+            width: 300px;
+            height: 2000px;
+            position: fixed;
+           
+         }
+         #name
+         {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+         }
+         #rout
+         {
+            
+           text-align: center;
+           font-size: 20px;
+           display: flex;
+           flex-direction: column;
+         }
+         #rout a
+         {
+            text-decoration: none;
+            color: black;
+         }
+        .parent
+         {
+            float: right;
+            width: 1100px;
+            height: 1200px;
+            
+            display: grid;
+            grid-template-columns: 366px 366px 366px;
+            grid-template-rows: 400px 400px 400px;
+           
+
+         }
+         /* .parent div
+         {
+            
+         } */
+         img
+         {
+            opacity: 0.7;
+         }
+         img:hover
+         {
+            opacity: 1;
+         }
+         #numbers
+         {
+            float: right;
+            width: 1100px;
+            background-color: gainsboro;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+         }
+         a
+         {
+            margin-top: 50px;
+         }
+         #a2
+         {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 20px;
+         }
+         #a1:hover,#a3:hover,#a4:hover,#a5:hover,#a6:hover
+         {
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 20px;
+
+         }
+         .about
+         {
+            background-color: gray;
+            float: right;
+            width: 1100px;
+            height: 1750px;
+           
+         }
+         #ab
+         {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+
+         }
+         #aboutchild
+         {
+            width: 500px;
+            margin-left: 300px;
+            
+         }
+         #aboutchild p
+         {
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+         }
+         #div1,#div3,#div5
+         {
+            background-color: rgb(255, 255, 255);
+         }
+         #div2
+         {
+            width: 450px;
+            background-color: lightgray;
+            text-align: center;
+            
+         }
+         #div4
+         {
+            width: 400px;
+            background-color: lightgray;
+            text-align: center;
+         }
+         #div6
+         {
+            width: 350px;
+            background-color: lightgray;
+            text-align: center;
+         }
+         #resume
+         {
+           
+          background-color: white;
+           color: black !important;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            opacity: 1;
+         }
+         #resume:hover
+         {
+            opacity: 0.6;
+            color: black;
+         }
+         #box1,#box2
+         {
+            width: 250px;
+            height: 430px;
+            background-color: lightgray;
+         }
+         #box1 #basic
+         {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 20px;
+          
+         }
+         #box2 #pro
+         {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 20px;
+           
+         }
+         #box1 p 
+         {
+            text-align: center;
+
+         }
+         #box2 p 
+         {
+            text-align: center;
+
+         }
+        
+           input
+           {
+            
+            margin-left: 100px;
+           }
+
+         
+        
+         #boxes2
+         {
+            width: 520px;
+            display: flex;
+            justify-content: space-between;
+            opacity: 0.6;
+         }
+         #boxes2:hover
+         {
+            opacity: 1;
+         }
+         .contact
+         {
+            float: right;
+            width: 1100px;
+            background-color: gainsboro;
+            height: 500px;
+         }
+         #ct
+         {
+            text-align: center;
+         }
+         #con
+         {
+            width: 500px;
+            margin-left: 300px;
+            
+         }
+         #input1,#input2,#input3
+         {
+            width: 500px;
+            background-color: white;
+            margin-left: 0px;
+            padding: 15px;
+         }
+         #submit
+         {
+            width: 534px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-left: 0px;
+            padding: 15px;
+         }
+         .info
+         {
+            float: right;
+            width: 1100px;
+            background-color: gray;
+            height: 420px;
+
+         }
+         #infoblogtags
+         {
+            width: 1050px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+
+         }
+         #information,#blog,#tags
+         {
+            width: 300px;
+         }
+         #tags a
+         {
+            width: 60px;
+            background-color: rgb(66, 63, 63);
+            opacity: 0.7;
+            color: white;
+            
+         }
+         #footor
+         {
+            float: right;
+            width: 1050px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 25px;
+         }
+        #workshop
+        {
+         padding-left: 30px;
+         padding-top: 20px;
+        }
+         #workshop:hover
+         {
+            background-color: black;
+            color: white;
+            
+         }
+
+        
+
+    </style>
+   
+</head>
+<body>
+    <div id="left">
+        <div id="name">
+            <p>SOME NAME</p>
+        </div>
+        <div id="rout" >
+           <a href="#prot">PORTFOLIL</a>
+           
+            <a href="#abt">ABOUT ME</a>
+           
+            <a href="#cont">CONTACT</a>
+        </div>
+    </div>
+    <div class="parent" id="prot">
+        <div><img src="./pp1.jpg" width="366" height="400"></div>
+        <div><img src="./pp2.jpg" width="366" height="400"></div>
+        <div><img src="./pp3.jpg" width="366" height="400"></div>
+        <div><img src="./pp4.jpg" width="366" height="400"></div>
+        <div><img src="./pp5.jpg" width="366" height="400"></div>
+        <div><img src="./pp6.jpg" width="366" height="400"></div>
+        <div><img src="./pp3.jpg" width="366" height="400"></div>
+        <div><img src="./pp2.jpg" width="366" height="400"></div>
+        <div><img src="./pp7.jpg" width="366" height="400"></div>
+        
+    </div>
+    <div id="numbers">
+        <a id="a1"><<</a>
+        <a id="a2">&nbsp;&nbsp;&nbsp;&nbsp;1</a>
+        <a id="a3">&nbsp;&nbsp;&nbsp;&nbsp;2</a>
+        <a id="a4">&nbsp;&nbsp;&nbsp;&nbsp;3</a>
+        <a id="a5">&nbsp;&nbsp;&nbsp;&nbsp;4</a>
+        <a id="a6">&nbsp;&nbsp;&nbsp;&nbsp;>></a>
+
+    </div>
+    <div class="about" id="abt">
+        <p id="ab">About Me</p>
+        <div id="aboutchild">
+            <img src="./about.jpg" width="500" height="500">
+            <p>My Name</p>
+            <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>mail: example@example.com</p>
+            <p>tel: 5353 35531</p>
+            <hr>
+            <h2>Technical Skills</h2>
+            <p>Photography</p>
+            <div id="div1">
+                <div id="div2">95%</div>
+            </div>
+            <p>Web Design</p>
+            <div id="div3">
+                <div id="div4">85%</div>
+            </div>
+            <p>Photoshop</p>
+            <div id="div5">
+                <div id="div6">80%</div>
+            </div>
+            <p id="resume">Download Resume</p>
+            <hr>
+            <p>How much I charge</p>
+            <div id="boxes2">
+                <div id="box1">
+                    <p id="basic">Basic</p>
+                    <p>Web Design</p>
+                    <hr>
+                    <p>Photography</p>
+                    <hr>
+                    <p>5GB Storage</p>
+                    <hr>
+                    <p>Mail Support</p>
+                    <hr>
+                    <p>$ 10</p>
+                    <p>per month</p>
+                    <hr>
+                    <input type="submit" value="Sign up">
+                </div>
+                <div id="box2">
+                    <p id="pro">Pro</p>
+                    <p>Web Design</p>
+                    <hr>
+                    <p>Photography</p>
+                    <hr>
+                    <p>5GB Storage</p>
+                    <hr>
+                    <p>Endless Support</p>
+                    <hr>
+                    <p>$ 25</p>
+                    <p>per month</p>
+                    <hr>
+                    <input type="submit" value="Sign up">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="contact" id="cont">
+        <h3 id="ct">Contact</h3>
+        <div id="con">
+         <h3>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</h3>
+       <form>
+         <p>Name</p>
+         <input type="text"  id="input1">
+         <p>Email</p>
+         <input type="email"  id="input2">
+         <p>Message</p>
+         <input type="text"  id="input3">
+         <br>
+         <br>
+         <input type="submit" value="Send Message" id="submit">
+       </form>
+
+        </div>
+    </div>
+    <div class="info">
+      <div id="infoblogtags">
+        <div id="information">
+         <h3>INFO</h3>
+         <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+        <div id="blog">
+         <h3>BLOG POST</h3>
+         <div id="workshop"><img src="./workshop.jpg" width="80px"><p>Lorem
+            Sed mattis nunc</p></div>
+         <hr>
+         <div id="workshop"><img src="./gondol.jpg" width="80px"><p>Ipsum
+            Praes tinci sed</p></div>
+        </div>
+        <div id="tags">
+         <h3>PopularTags</h3>
+         <a id="travel" style="background-color: black;">Travel</a>
+         <a>NewYork</a>
+         <a>London</a>
+         <a>Ikea</a>
+         <a>Norway</a>
+         <a>Diy</a>
+         <a>Ideas</a>
+         <a>Baby</a>
+         <a>Family</a>
+         <a>News</a>
+         <a>Clothing</a>
+         <a>Shoping</a>
+         <a>Sports</a>
+         <a>Games</a>
+        </div>
+      </div>
+    </div>
+    <div id="footor">
+      <p>Powerd by<a href="https://www.w3schools.com/w3css/tryw3css_templates_portfolio2.htm">W3.css</a></p>
+
+    </div>
+    
+    
+</body>
+</html>
